@@ -1,0 +1,44 @@
+# -*- coding: utf-8 -*-
+# -*- mode: org -*-
+#+TITLE: Analysis on Biographies
+#+AUTHOR: Evangelos Mathioudis
+#+STARTUP: overview indent inlineimages
+#+LANGUAGE: en
+#+OPTIONS: H:3 creator:nil timestamp:nil skip:nil toc:nil num:t ^:nil ~:~
+#+OPTIONS: author:nil title:nil date:nil
+
+* Section 1
+Vandalism edits happen when a user or a bot replaces the whole content
+of an article with rubbish or offensive language. Below in Figure
+ref:NumOfVandalismEdits the number of vandalism edits per gender are plotted.
+#+CAPTION: Number of Vandalism edits per gender.
+#+LABEL: NumOfVandalismEdits
+#+ATTR_LATEX: :float nil
+[[./images/vandalisms.jpg]]
+
+We have to compare the portions of these vandalism edits. The Figure
+ref:percentagesOfVandalEdits shows the percentages of vandalism edits
+in our dataset. One can observe that the percentage for females is one
+and a half times the percentage for males. We should note here that
+our dataset is imbalanced and revisions for males counts over 40000
+revisions compared to almost 20000 for females.
+#+CAPTION: Percentages of vandalism edits per gender. The percentage for females is almost one and a half times the percentage for males.
+#+LABEL: percentagesOfVandalEdits
+#+ATTR_LATEX: :float nil
+[[./images/ratioOfVandalisms.jpg]]
+
+Figure ref:varianceOfSubjectivity shows the change of subjectivity for
+each person. We have compared the subjectivity at the beginning of
+each biography to the subjectivity of the last snapshot we
+got. Subjectivity for males has been reduced to 80% of them compared
+to 58% for females. *To be discussed* 
+#+CAPTION: This plot shows how much the subjectivity for each biography has changed from its birth to the last snapshot we got.
+#+LABEL: varianceOfSubjectivity
+#+ATTR_LATEX: :float nil
+[[./images/varianceOfSubjectivity.jpg]]
+
+
+#+CAPTION: Mean abstraction level distributions for females and males. Both distributions are left skewed.
+#+LABEL: distributionsOfMal
+#+ATTR_LATEX: :float nil
+[[./images/meanAbstractLevelHistogram.jpg]]
