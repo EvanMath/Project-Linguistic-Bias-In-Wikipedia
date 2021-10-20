@@ -6,6 +6,7 @@ from collections import Counter
 import json
 import spacy
 import nltk
+# nltk.download('punkt')
 
 
 def extracting_features(text: str, positive_words: set, negative_words: set,
